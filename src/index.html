@@ -1,15 +1,53 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <h1>Example title</h1>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOIT JS HW 11</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/styles.css" />
+
+</head>
+<body>
+  <header class="header">
+    
+    <a href="index.html" class="logo">Boogle Search<span class="tm">™</span></a>
+    
+    <form class="search-form" id="search-form">
+
+      <div class="search-container">
+        <input class="search-form-input" type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+        <button type="submit" class="search-button">
+          <img src="search-icon.png" alt="Search" class="search-icon" />
+        </button>
+      </div>
+
+    </form>
+
+  </header>
+  <main class="main-content">
+
+    <div id="welcome-text" class="welcome-text">
+      <p>Welcome to Boogle Search Images<br> Please Enter Your Query Above to Start <br></p>
+      <img src="search-icon.png" alt="Search" class="search-icon-animate" />
+    </div>
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="gallery">
+          <!-- Image cards -->
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- JS -->
+  <script src="./js/index.js" type="module"></script>
+</body>
 </html>
